@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: cindy.sirihpinang
+---
+testFramework: junit
+sourceLanguage: java
