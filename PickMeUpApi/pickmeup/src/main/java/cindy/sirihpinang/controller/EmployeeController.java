@@ -42,7 +42,7 @@ public class EmployeeController{
         return (new Gson()).toJson(repository.findById(id));
     }
 
-    @Post(consumes=MediaType.APPLICATION_JSON)
+    @Post(consumes=MediaType.APPLICATION_FORM_URLENCODED)
     public String save(@Body Employee t) {
         HashMap<String, Object> data = new HashMap<>();
         if (repository.save(t)) {
